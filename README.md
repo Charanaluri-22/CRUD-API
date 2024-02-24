@@ -28,7 +28,7 @@ $ cd CRUD_API && npm install
 
 > Set up required environment variables
 ```javascript
-MONGO_PASSWORD = your_passwird
+MONGO_PASSWORD = your_password
 ```
 
 > In the root directory of  CRUD-API run  the following command
