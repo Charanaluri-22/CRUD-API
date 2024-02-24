@@ -1,11 +1,13 @@
 const express = require("express");
 const app = express();
+const  cors = require('cors')
 const mongoose = require("mongoose");
 // const Product = require("./models/Product");
 const Router = require('./routes/product.route')
 require('dotenv').config()
 //middleware
 app.use(express.json());
+app.use(cors())
 app.use(express.urlencoded({ extended: true }));
 //connect to database and start server
 const password = process.env.MONGO_PASSWORD
